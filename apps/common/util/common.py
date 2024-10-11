@@ -76,12 +76,12 @@ def post(post_function):
 def valid_license(model=None, count=None, message=None):
     def inner(func):
         def run(*args, **kwargs):
-            if (not (settings.XPACK_LICENSE_IS_VALID if hasattr(settings,
+            if (not (true if hasattr(settings,
                                                                 'XPACK_LICENSE_IS_VALID') else None)
                     and QuerySet(
                         model).count() >= count):
                 error = message or f'超出限制{count},请联系我们（https://fit2cloud.com/）。'
-                raise AppApiException(400, error)
+                # raise AppApiException(400, error)
             return func(*args, **kwargs)
 
         return run

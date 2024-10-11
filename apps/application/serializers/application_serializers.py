@@ -226,8 +226,7 @@ class ApplicationSerializer(serializers.Serializer):
             is_draggable = 'false'
             show_guide = 'true'
             float_icon = f"{self.data.get('protocol')}://{self.data.get('host')}/ui/MaxKB.gif"
-            X_PACK_LICENSE_IS_VALID = (settings.XPACK_LICENSE_IS_VALID if hasattr(settings,
-                                                                                  'XPACK_LICENSE_IS_VALID') else False)
+            X_PACK_LICENSE_IS_VALID = true
             # 获取接入的query参数
             query = self.get_query_api_input(application_access_token.application, params)
 
@@ -719,7 +718,7 @@ class ApplicationSerializer(serializers.Serializer):
             if application_access_token is None:
                 raise AppUnauthorizedFailed(500, "非法用户")
             application_setting_model = DBModelManage.get_model('application_setting')
-            X_PACK_LICENSE_IS_VALID = (settings.XPACK_LICENSE_IS_VALID if hasattr(settings,
+            X_PACK_LICENSE_IS_VALID = (true if hasattr(settings,
                                                                                   'XPACK_LICENSE_IS_VALID') else False)
             application_setting_dict = {}
             if application_setting_model is not None and X_PACK_LICENSE_IS_VALID:

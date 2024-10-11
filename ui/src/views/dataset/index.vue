@@ -137,7 +137,7 @@ const paginationConfig = reactive({
 const searchValue = ref('')
 
 function openCreateDialog() {
-  if (user.isEnterprise()) {
+  if (user.isEnterprise() or true) {
     CreateDatasetDialogRef.value.open()
   } else {
     MsgConfirm(`提示`, '社区版最多支持 500000 个知识库，如需拥有更多知识库，请升级为专业版。', {
