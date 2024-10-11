@@ -379,8 +379,6 @@ class DataSetSerializers(serializers.ModelSerializer):
                                 'embedding_mode_id': instance.get('embedding_mode_id')}
             return self.save(dataset_instance, with_valid=True)
 
-        @valid_license(model=DataSet, count=500000,
-                       message='社区版最多支持 500000 个知识库，如需拥有更多知识库，请联系我们（https://fit2cloud.com/）。')
         @post(post_function=post_embedding_dataset)
         @transaction.atomic
         def save(self, instance: Dict, with_valid=True):
