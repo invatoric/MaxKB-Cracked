@@ -173,7 +173,7 @@ function openCreateDialog() {
   if (user.isEnterprise()) {
     CreateApplicationDialogRef.value.open()
   } else {
-    MsgConfirm(`提示`, '社区版最多支持 5 个应用，如需拥有更多应用，请升级为专业版。', {
+    MsgConfirm(`提示`, '社区版最多支持 500000 个应用，如需拥有更多应用，请升级为专业版。', {
       cancelButtonText: '确定',
       confirmButtonText: '购买专业版',
     })

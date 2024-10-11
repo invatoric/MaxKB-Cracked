@@ -151,7 +151,7 @@ const submitValid = (formEl: FormInstance | undefined) => {
         if (res?.data) {
           submitHandle(formEl)
         } else {
-          MsgAlert('提示', '社区版最多支持 5 个应用，如需拥有更多应用，请升级为专业版。')
+          MsgAlert('提示', '社区版最多支持 500000 个应用，如需拥有更多应用，请升级为专业版。')
         }
       })
   }

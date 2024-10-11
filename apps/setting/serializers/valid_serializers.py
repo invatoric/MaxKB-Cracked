@@ -20,12 +20,12 @@ from smartdoc import settings
 from users.models import User
 
 model_message_dict = {
-    'dataset': {'model': DataSet, 'count': 50,
-                'message': '社区版最多支持 50 个知识库，如需拥有更多知识库，请联系我们（https://fit2cloud.com/）。'},
-    'application': {'model': Application, 'count': 5,
-                    'message': '社区版最多支持 5 个应用，如需拥有更多应用，请联系我们（https://fit2cloud.com/）。'},
-    'user': {'model': User, 'count': 2,
-             'message': '社区版最多支持 2 个用户，如需拥有更多用户，请联系我们（https://fit2cloud.com/）。'}
+    'dataset': {'model': DataSet, 'count': 500000,
+                'message': '社区版最多支持 500000 个知识库，如需拥有更多知识库，请联系我们（https://fit2cloud.com/）。'},
+    'application': {'model': Application, 'count': 500000,
+                    'message': '社区版最多支持 500000 个应用，如需拥有更多应用，请联系我们（https://fit2cloud.com/）。'},
+    'user': {'model': User, 'count': 500000,
+             'message': '社区版最多支持 500000 个用户，如需拥有更多用户，请联系我们（https://fit2cloud.com/）。'}
 }
 
 

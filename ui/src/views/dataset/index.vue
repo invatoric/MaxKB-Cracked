@@ -140,7 +140,7 @@ function openCreateDialog() {
   if (user.isEnterprise()) {
     CreateDatasetDialogRef.value.open()
   } else {
-    MsgConfirm(`提示`, '社区版最多支持 50 个知识库，如需拥有更多知识库，请升级为专业版。', {
+    MsgConfirm(`提示`, '社区版最多支持 500000 个知识库，如需拥有更多知识库，请升级为专业版。', {
       cancelButtonText: '确定',
       confirmButtonText: '购买专业版'
     })
