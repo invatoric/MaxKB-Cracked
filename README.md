@@ -1,3 +1,8 @@
+# MaxKB Cracked Edition
+去除了所有数量限制的MaxKB社区版\
+（由于本人技术原因，没有去除限制代码，而是改成了一个极大值（反正是你一辈子都用不完的））
+
+---
 [English](README_EN.md) | [中文](README.md)
 
 <p align="center"><img src= "https://github.com/1Panel-dev/maxkb/assets/52996290/c0694996-0eed-40d8-b369-322bf2a380bf" alt="MaxKB" width="300" /></p>
